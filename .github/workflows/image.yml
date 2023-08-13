@@ -20,7 +20,7 @@ jobs:
       run: docker build -t nicoalf26/tp-lunes .
       
     - name: Log in to Docker Hub
-      run: docker login -u nicoalf26 -p ${{ secrets.DOCKERHUB_TOKEN }}
+      run: docker login -u nicoalf26 -p ${{ secrets.TOKENDOCKERHUB }}
       
     - name: Push Docker image
       run: docker push nicoalf26/tp-lunes
